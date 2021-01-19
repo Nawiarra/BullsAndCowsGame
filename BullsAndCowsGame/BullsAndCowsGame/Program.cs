@@ -49,9 +49,12 @@ namespace BullsAndCowsProj
                 game.SearchFunction(probability);
 
                 if (game.BullsAndCows[0] == game.SizeOfCharactersArbitrary)
+                { 
                     Console.WriteLine("OutputList is {0}!", game.OutputList[0]);
+                    break;
+                }
 
-                if (game.OutputList.Count > 1)
+                if (game.OutputList.Count >= 1)
                     Console.WriteLine("Next move: ");
 
                 if (game.OutputList.Count < 1)
